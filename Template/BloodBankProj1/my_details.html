@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body bgcolor="green">
+        <table border="solid" >
+            <tr>
+                <td>name</td> <td>age</td> <td>phone no</td> <td>blood Grp</td> <td>email</td> <td>unit req</td> <td>date time</td>
+            </tr>
+            {% for items in  qset %}
+                <tr>
+                <td>{{items.d_name1}}</td>
+                <td>{{items.d_age1}}</td>
+                <td>{{items.d_phone_no1}}</td>
+                <td>{{items.d_group_blood1}}</td>
+                <td>{{items.d_email1}}</td>
+                <td>{{items.d_unit1}}</td>
+                <td>{{items.d_date1}}</td>
+                 </tr>
+
+            {% endfor %}
+             <a href="../logout1/"> <button>logout</button></a>
+
+
+</body>
+</html>

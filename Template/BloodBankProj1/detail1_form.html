@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN DETAILS</title>
+</head>
+<body bgcolor="grey">
+<form action="../mydetails/" method="post">
+    {%csrf_token%}
+    email_id<input type="text" name="email">
+    <br>
+    phone_no<input type="text" name="phone">
+    <br>
+    <input type="radio" name="TYPE" value="D" checked> DONOR
+    <input type="radio" name="TYPE" value="P"> PATIENT
+    <br>
+    <button><input type="submit" value="ok"></button>
+</form>
+</body>
+</html>
